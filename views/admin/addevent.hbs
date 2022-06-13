@@ -1,0 +1,91 @@
+<div class="card card-body mx-3 mx-md-4 mt-n6">
+    <div class="container">
+        <form class="was-validated" method="post" enctype="multipart/form-data">
+        <h2>Add Event</h2>
+        
+        <div class="row">
+            <div class="col-md-6">
+            <div class="form-group">
+                <label for="first">Event Name</label>
+                <div class="input-group input-group-outline mb-3">
+                    <input type="text" name="eventname" class="form-control" required>
+                </div>
+            </div>
+            </div>
+            <!--  col-md-6   -->
+    
+            <div class="col-md-6">
+            <div class="form-group">
+                <label for="last">Date</label>
+                <div class="input-group input-group-outline mb-3">
+                    <input type="datetime-local" name="date"  class="form-control" required>
+                </div>
+            </div>
+            </div>
+            <!--  col-md-6   -->
+        </div>
+    
+    
+        <div class="row">
+            <div class="col-md-6">
+            <div class="form-group">
+                <label for="company">Venue</label>
+                <div class="input-group input-group-outline mb-3">
+                    <!-- <input type="text" name="ev_venue" class="form-control"  required> -->
+                    <select name="venue" class="form-control form-control-sm" >
+            
+                        <option value="rr">Mohandas hall</option>
+          
+                      </select>
+                </div>
+            </div>
+    
+    
+            </div>
+            <!--  col-md-6   -->
+    
+            <div class="col-md-6">
+    
+            <div class="form-group">
+                <label for="phone">Team Strength</label>
+                <div class="input-group input-group-outline mb-3">
+                    <input type="text" name="teamstrength" class="form-control" pattern="^[1-9]+[0-9]*$" title="Invalid input" required>
+                </div>
+            </div>
+            </div>
+            <!--  col-md-6   -->
+        </div>
+        <!--  row   -->
+    
+    
+        <div class="row">
+            <div class="col-md-6">
+    
+            <div class="form-group">
+                <label for="email">Max Number of Participants</label>
+                <div class="input-group input-group-outline mb-3">
+                    <input type="text" name="noparticipants" class="form-control" pattern="^[1-9]+[0-9]*$" title="Invalid input" required>
+                </div>
+            </div>
+            </div>
+            <!--  col-md-6   -->
+            <!--  col-md-6   -->
+        </div>
+        <!--  row   -->
+            <div class="mb-3">
+              <label for="validationTextarea">Description</label>
+              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" name="description" required></textarea>
+              <div class="invalid-feedback">
+                Please enter a Description in the textarea.
+              </div>
+            </div>
+          
+            <div class="custom-file">
+              <input type="file" name="filename" class="custom-file-input" id="validatedCustomFile"  required>
+              <label class="custom-file-label" for="validatedCustomFile">Upload Poster...</label>
+            </div>
+    
+        <button type="submit" class="btn btn-primary pt-3">Submit</button>
+        </form>
+    </div>
+</div>

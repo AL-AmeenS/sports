@@ -1,0 +1,250 @@
+<!-- header section starts  -->
+ <body class="main-layout">
+      <!-- loader  -->
+      <!-- end loader -->
+      <!-- header -->
+      <header class="full_bg">
+         <!-- header inner -->
+         <!-- end header inner -->
+         <!-- end header -->
+         <!-- banner -->
+         <section class="banner_main">
+            <div class="container">
+               <div class="banner_po">
+                  <div class="row">
+                     <div class="col-md-7">
+                        <div class="text_box">
+                           <span>Now started</span>
+                           <h1> <strong>Applications</strong> <br> Open </h1>
+                           <a class="read_more" href="#about" role="button">About us</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </header>
+      <!-- end banner -->
+      <!-- about -->
+      <div id="about" class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 offset-md-3">
+                  <div class="titlepage">
+                     <h2>About Us</h2>
+                     <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptu </span>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="about_img">
+                     <figure><img src="images/about.png" alt="#"/></figure>
+                     <a class="read_more" href="Javascript:void(0)"> Read More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!-- our products -->
+      <div class="products">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-7">
+                  <div class="titlepage">
+                     <h2>Our Events</h2>
+                     <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptu
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+                {{#each event}}
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div id="ho_bo" class="our_products" style="border-radius: 10px;">
+                     <div class="product" style="border-radius: 20px;">
+                        <figure><img style="width: 100%; height: 250px; border-radius: 10px;" src="/Event_images/{{this.imagename}}" alt="#"/></figure>
+                     </div>
+                     <h3>{{this.eventname}}</h3>
+                     <span>Date:{{this.date}}  &nbsp;&nbsp;:</span><br>
+                     <span>Venue :{{this.venue}}</span>
+                     <p>{{this.description}}</p>
+                     <div class="text-center">
+                        <button class="butn1 btn btn-lg" type="submit">Apply</button>
+                     </div>
+                     
+                  </div>
+               </div>
+               {{/each}}
+            </div>
+         </div>
+      </div>
+      <!-- end our products -->
+      <!-- using -->
+      <div class="using">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <h2 >Lorem Ipsum using</h2>
+                     <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise</p>
+                     <a class="read_more white_bg" href="Javascript:void(0)"> Read More</a>
+                  </div>
+               </div>
+               <div class="col-md-5 offset-md-1 padding_right0">
+                  <div class="frout_img">
+                     <figure><img src="/images/frout.png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end using -->
+      <!-- gallery -->
+      <div  class="gallery">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Gallery</h2>
+                     <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="/images/gallery1.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="/images/gallery2.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="/images/gallery3.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="/images/gallery4.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="/images/gallery5.png" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="/images/gallery6.png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end gallery -->
+      <!--  contact -->
+      <div class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Contact Us</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6  padding_right0">
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="453" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 padding_left0">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Phone" type="type" name="Phone"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="type" name="Email">                          
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Message" type="type" Message="Message">Message</textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <div class="newslatter">
+                        <h4>Subscribe Our Newsletter</h4>
+                        <form class="bottom_form">
+                           <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+                           <button class="sub_btn">subscribe</button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="col-sm-12">
+                     <div class=" border_top1"></div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <h3>menu LINKS</h3>
+                     <ul class="link_menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html"> About</a></li>
+                        <li><a href="product.html">Our Product</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+                  <div class=" col-md-3">
+                     <h3>TOP food</h3>
+                     <p class="many">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                     </p>
+                  </div>
+                  <div class="col-lg-3 offset-mdlg-2     col-md-4 offset-md-1">
+                     <h3>Contact </h3>
+                     <ul class="conta">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Location</li>
+                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> demo@gmail.com</a></li>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i> Call : +01 1234567890</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-10 offset-md-1">
+                        <p>© 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html Templates</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+     
+   </body>

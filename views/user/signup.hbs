@@ -1,0 +1,109 @@
+<style>
+  ::placeholder{
+    font-size: 14px;
+  }
+  .button{
+    background-color: #18bbb6;
+    color: white;
+  }
+  .button:hover{
+    background-color: white;
+    color: #18bbb6;
+    border-color: #18bbb6;
+    border-width: 2px;
+    
+  }
+  
+</style>
+<section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7" >
+              <div class="card shadow-2-strong card-registration" style="border-radius: 15px;height: 515px;margin-top: -10px;">
+                <div class="card-body p-5 p-md-5" style="margin-top: -25px;">
+                  <h1 class="mb-4 pb-2 pb-md-0 mb-md-5 text-center">Sign Up</h1>
+                  <form action="/usersignup" method="post">
+      
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+      
+                        <div class="form-outline">
+                          <input type="text" id="firstName" name="firstname" class="form-control form-control-lg" placeholder="First Name" />
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4">
+      
+                        <div class="form-outline">
+                          <input type="text" id="lastName" name="lastname" class="form-control form-control-lg" placeholder="Last Name" />
+                        </div>
+      
+                      </div>
+                    </div>
+      
+                    
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                          <input type="email" id="emailAddress" name="email" class="form-control form-control-lg" placeholder="Email"/>
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                          <input type="tel" id="phoneNumber" name="phoneno" class="form-control form-control-lg" placeholder="Phone Number"/>
+                        </div>
+      
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                          <input type="number" id="AdminNo" name="adminno" class="form-control form-control-lg" placeholder="Admission Number" />
+                        
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                          <input type="text" id="Branch" name="branch" class="form-control form-control-lg" placeholder="Branch" />
+           
+                        </div>
+      
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-4 pb-2">
+        
+                          <div class="form-outline">
+                            <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Password" />
+                          </div>
+        
+                        </div>
+                        <div class="col-md-6 mb-4 pb-2">
+        
+                          <div class="form-outline">
+                            <input type="password" id="confirmpassword" name="confirmpassword" class="form-control form-control-lg" placeholder="Confirm Password" />
+                            
+                          </div>
+        
+                        </div>
+                      </div>
+      
+                   
+      
+                    <div class="text-center ">
+                      <input class="button btn btn-lg"  style="font-color:white;" type="submit" value="Submit" />
+                    </div>
+      
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
